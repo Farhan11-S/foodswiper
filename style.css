@@ -32,9 +32,18 @@ body {
   border-color: rgb(255, 255, 255);
 }
 
-.overlay {
-  width: 100%;
-  background-color: rgba(0,0,0, 0.7);
+@media screen and (max-width:767px){
+    .overlay {
+        width: 100%;
+        background-color: rgba(0, 0, 255, 0.7);
+      }
+}
+
+@media screen and (min-width:768px){
+    .overlay {
+        width: 100%;
+        background-color: rgba(0, 0, 255, 0.1);
+      }
 }
 
 .overlay-content {
@@ -49,4 +58,20 @@ hr {
 }
 ul li a:hover{
   background-color: rgba(0,0,0, 0.2);    
+}
+.navbar{
+    z-index: 1000;
+}
+.content{
+    z-index: 10;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.content h1 {
+    color: rgb(0, 0, 0);
+}
+
+.content p {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
 }
