@@ -27,11 +27,11 @@
 <body>
 
     <!-- Nabar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger" id="navbar">
         <div class="container">
             <div class="logo">
                 <a class="navbar-brand text-white font-weight-bold" href="#">
-                    <img href="#" src="img/main-icon1.png" width="70px">
+                    <img href="#" src="img/main-icon1.png" width="30px">
                     OHIO</a>
             </div>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#allmenu">Order</a>
+                        <a id="menu-button" class="nav-link text-white">Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#footer">Contect</a>
@@ -67,33 +67,15 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <div class="content" id="content-potrait">
-                <h1>Bakso</h1>
-                <p>12.000</p>
-            </div>
         </div>
+        <!-- <div class="content swiper-slide" id="content-potrait">
+            <h1>Bakso</h1>
+            <p>12.000</p>
+        </div> -->
         <!-- main content -->
-        <div class="container mt-4" id="allmenu">
-            <div class="d-flex flex-column">
-                <div class="card card-landscape p-2 mt-3" style="width: 25rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
-                </div>
-
-                <div class="card card-landscape p-2 mt-3" style="width: 25rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
-                </div>
-            </div>
+        <div class="container mt-4" id="all-menu-potrait">
+            <h2 class="section-title text-center">Our Menus</h2>
+            <div class="d-flex flex-column" id="menu-potrait"></div>
         </div>
     </div>
 
@@ -114,26 +96,9 @@
 
         </div>
         <!-- main content -->
-        <div class="container mt-4" id="allmenu">
-            <div class="d-flex flex-wrap">
-                <div class="card card-landscape p-2 mr-3" style="width: 18rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
-                </div>
-
-                <div class="card card-landscape p-2 mr-3" style="width: 18rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
-                </div>
-            </div>
+        <div class="container mt-4" id="all-menu-landscape">
+            <h2 class="section-title text-center">Our Menus</h2>
+            <div class="d-flex flex-wrap" id="menu-landscape"></div>
         </div>
 
 
@@ -148,61 +113,58 @@
             <!-- Grid row -->
             <div class="row">
 
-                <!-- Grid column -->
-                <div class="col-md-4 mx-auto text-white">
-
-                    <!-- Content -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white ">OHIO</h5>
-                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipisicing elit.</p>
-
-                </div>
-                <!-- Grid column -->
-
                 <hr class="clearfix w-100 d-md-none">
 
                 <!-- Grid column -->
                 <div class="col-md-4 mx-auto">
 
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Contact</h5>
+                    <h1 class="font-weight-bold text-uppercase mt-3 mb-4 text-white text-center">OHIO</h1>
 
-                    <ul class="list-unstyled text-white">
-                        <li>
-                            <p>+62877234567</p>
+                    <!-- Links -->
+                    <h6 class="font-weight-bold text-uppercase mt-3 mb-4 text-white text-center">Contact : </h6>
+
+                    <ul class="list-unstyled text-white text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-whatsapp text-white"> </i>
+                            </a>
                         </li>
-                        <li>
-                            <p>Jl. anbiyen andjayani mejobo Kudus</p>
+                        <li class="list-inline-item">
+                            <p>+62813 2933 3234</p>
+
                         </li>
                     </ul>
+                    <ul class="list-unstyled text-white text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram text-white"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <p>@baksokuahtaichan_ohio</p>
 
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled text-white text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt text-white"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <p>Jl. anbiyen andjayani mejobo Kudus</p>
+
+                        </li>
+                    </ul>
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-100 ">
             </div>
             <!-- Grid row -->
 
         </div>
         <!-- Footer Links -->
-
-        <hr>
-
-        <!-- Social buttons -->
-        <ul class="list-unstyled list-inline text-center ">
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="fab fa-facebook-f text-white"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="fab fa-instagram text-white"> </i>
-                </a>
-            </li>
-        </ul>
-        <!-- Social buttons -->
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
@@ -216,32 +178,56 @@
 
 <script>
     var items = ["BAKSO KUAH KALDU", "BAKSO KUAH TAICHAN", "CEKER KUAH KALDU", "CAKAR KUAH TAICHAN",
-        "IGA KUAH KALDU", "IGA KUAH TAICHAN", "TAHU KUAH KALDU", "TAHU KUAH TAICHAN",
+        "IGA KUAH KALDU", "TAHU KUAH KALDU", "TAHU KUAH TAICHAN",
         "TETELAN KUAH KALDU", "TETELAN KUAH TAICHAN"];
     var wrapperPotrait = document.getElementById("wrapper-potrait");
     var wrapperLandscape = document.getElementById("wrapper-landscape");
+    var menuWrapperLandscape = document.getElementById("menu-landscape");
+    var menuWrapperPotrait = document.getElementById("menu-potrait");
     items.forEach(showImage);
     function showImage(item, index, arr) {
         var contentPotrait = `<div class="swiper-slide">
                 <img src="img/${item}.jpg" alt="" width="100%">
+                <div class="content" id="content-potrait">
+                        <h1>${item}</h1>
+                        <p>12.000</p>
+                </div>
             </div>`;
         var contentLandscape = `<div class="swiper-slide landscape">
                     <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
                     <img src="img/${item}.jpg" alt="${item}" style="width:100%;">
-                    <div class="content">
+                    <div class="content" id="content-landscape">
                         <h1>${item}</h1>
                         <p>12.000</p>
                     </div>
                 </div>
                 </div>`;
+        var menuLandscape = `<div class="card card-landscape p-2 mx-auto my-2" style="width: 18rem;">
+                    <img class="card-img-top" src="img/${item}.jpg" alt="${item}">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">${item}</h5>
+                        <p class="card-text">12.000</p>
+                    </div>
+                </div>`;
+        var menuPotrait = `<div class="card card-landscape p-2 mt-3 mx-auto" style="width: 25rem;">
+                    <img class="card-img-top" src="img/${item}.jpg" alt="${item}">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">${item}</h5>
+                        <p class="card-text">12.000</p>
+                    </div>
+                </div>`;
         wrapperPotrait.innerHTML += contentPotrait;
         wrapperLandscape.innerHTML += contentLandscape;
+        menuWrapperLandscape.innerHTML += menuLandscape;
+        menuWrapperPotrait.innerHTML += menuPotrait;
     }
     console.log(wrapperLandscape);
+    var allMenuId = "all-menu-landscape"
     if (window.innerWidth < 768) {
         var navbar = document.getElementById("navbar");
         navbar.classList.remove("fixed-top");
         console.log(navbar.classList);
+        var allMenuId = "all-menu-potrait"
     }
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
@@ -265,7 +251,10 @@
         autoplay: {
             delay: 5000,
         },
-    })  
+    });
+    document.getElementById("menu-button").onclick = function () {
+        window.location.href = `#${allMenuId}`;
+    };
 </script>
 
 </html>

@@ -1,29 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
+
 .content {
-    position: absolute;
-    bottom: 0;
-    z-index: 10;
-    background-color: rgba(255, 0, 0, 0.1);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(255, 0, 0, 1);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
+
 html,
 body {
   position: relative;
   height: 100%;
-}
-
-.swiper-container {
-  height: 100vh;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -34,18 +31,27 @@ body {
   border-color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width:767px){
-    .overlay {
-        width: 100%;
-        background-color: rgba(255, 0, 0, 0.7);
-      }
+@media screen and (max-width:767px) {
+  .overlay {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.7);
+  }
 }
 
-@media screen and (min-width:768px){
-    .overlay {
-        width: 100%;
-        background-color: rgba(255, 0, 0, 0.1);
-      }
+@media screen and (min-width:768px) {
+  .overlay {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  .content {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  .swiper-container {
+    height: 100vh;
+  }
 }
 
 .overlay-content {
@@ -54,34 +60,47 @@ body {
 }
 
 hr {
-    width: 40%;
-    height: 1px;
-    background-color: white;
-}
-ul li a:hover{
-  background-color: rgba(0,0,0, 0.2);    
-}
-.navbar{
-    z-index: 1000;
+  width: 40%;
+  height: 1px;
+  background-color: white;
 }
 
-.content h1 {
-    color: rgb(255, 255, 255);
+ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.content p {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
+.navbar {
+  z-index: 1000;
 }
-.card-landscape{
+
+#content-landscape h1 {
+  color: rgb(255, 255, 255);
+}
+
+#content-landscape p {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+#content-potrait h1{
+  font-size : 5vw;
+}
+#content-potrait p{
+  font-size : 4vw;
+}
+.card-landscape {
   border-radius: 10px;
 }
-.card-landscape:hover{
-    box-shadow:
-        0 1.8px 1.2px rgba(0, 0, 0, 0.034),
-        0 3.7px 2.3px rgba(0, 0, 0, 0.048),
-        0 6.5px 5px rgba(0, 0, 0, 0.06),
-        0 5.3px 9.9px rgba(0, 0, 0, 0.072),
-        0 10.8px 7.4px rgba(0, 0, 0, 0.086),
-        0 10px 10px rgba(0, 0, 0, 0.12);
+
+.card-landscape:hover {
+  box-shadow:
+    0 1.8px 1.2px rgba(0, 0, 0, 0.034),
+    0 3.7px 2.3px rgba(0, 0, 0, 0.048),
+    0 6.5px 5px rgba(0, 0, 0, 0.06),
+    0 5.3px 9.9px rgba(0, 0, 0, 0.072),
+    0 10.8px 7.4px rgba(0, 0, 0, 0.086),
+    0 10px 10px rgba(0, 0, 0, 0.12);
+}
+.fab {
+  display: inline-block;
 }
