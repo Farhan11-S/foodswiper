@@ -98,6 +98,8 @@ function screenResize() {
 }
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
+    spaceBetween: 30,
+        effect: 'fade',
     direction: 'horizontal',
     loop: true,
 
