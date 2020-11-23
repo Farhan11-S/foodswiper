@@ -3,6 +3,20 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
+
+img {
+  vertical-align: middle;
+}
+
+.content {
+  bottom: 0;
+  z-index: 10;
+  background-color: #ce272f;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
 html,
 body {
   position: relative;
@@ -18,15 +32,14 @@ body {
 }
 .navbar {
   z-index: 1000;
+  background-color: #ce272f;
 }
-
 
 .nav-link {
   font-size: smaller;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
   display: inline-block;
   position: relative;
 }
@@ -36,6 +49,7 @@ body {
   content: "";
   display: block;
   height: 1px;
+  margin-top: 3px;
   left: 50%;
   position: absolute;
   background: #fff;
@@ -54,6 +68,9 @@ body {
   margin-top: -5px;
   width: 70px;
 }
+.logo:hover {
+  transform: scale(1.1);
+}
 .swiper-button-next,
 .swiper-button-prev {
     background-color: white;
@@ -65,6 +82,17 @@ body {
     fill: black !important;
     stroke: black !important;
 }
+
+.swiper-button-next:hover {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.164);
+  transform: scale(1.1);
+}
+.swiper-button-prev:hover {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.164);
+  transform: scale(1.1);
+}
 img {
   vertical-align: middle;
 }
@@ -72,18 +100,19 @@ img {
 .content {
   bottom: 0;
   z-index: 10;
-  background-color:#dc3545;
+  background-color:#ce272f;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
 #content-landscape h1 {
   color: rgb(255, 255, 255);
+  font-size: calc((25vw - 3.5rem) / 7);
 }
 
 #content-landscape p {
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: calc((20vw - 3.5rem) / 7);
 }
 
 #content-potrait h1 {
@@ -93,7 +122,12 @@ img {
 #content-potrait p {
   font-size: 4vw;
 }
-
+.section-title{
+  border-bottom: 3px solid #ce272f;
+  width: 20%;
+  margin: auto;
+  padding-bottom: 7px;
+}
 .card-barang {
   border-radius: 10px;
   box-shadow:
@@ -112,16 +146,28 @@ img {
 .fab {
   display: inline-block;
 }
+footer{
+  background-color: #ce272f;
+}
 
 @media screen and (max-width:767px) {
   .overlay {
     width: 100%;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: #ce272f;
   }
   .logo img {
     position: absolute;
     margin-top: -5px;
     width: 60px;
+  }
+  .section-title{
+    border-bottom: 3px solid #ce272f;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 7px;
+  }
+  .nav-link {
+    text-align: center;
   }
 }
 
