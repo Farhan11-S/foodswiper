@@ -45,6 +45,7 @@ var menuWrapperLandscape = document.getElementById("menu-landscape");
 var menuWrapperPotrait = document.getElementById("menu-potrait");
 items.forEach(showImage);
 carousellItems.forEach(showCarousell);
+
 function showCarousell(item, index, arr) {
     var contentPotrait = `<div class="swiper-slide">
     <img src="img/${item.name}.jpg" alt="${item.name}" width="100%">
@@ -65,6 +66,7 @@ function showCarousell(item, index, arr) {
     wrapperPotrait.innerHTML += contentPotrait;
     wrapperLandscape.innerHTML += contentLandscape;
 }
+
 function showImage(item, index, arr) {
     var menuLandscape = `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 18rem;">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
@@ -73,19 +75,23 @@ function showImage(item, index, arr) {
         <p class="card-text">RP ${item.price}</p>
     </div>
 </div>`;
-    var menuPotrait = `<div class="card-barang p-2 mt-4 mx-auto" style="width: 25rem;">
+    var menuPotrait =
+        `<div class="card-horizontal my-3 mx-auto">
+    <div class="img-square-wrapper">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
-    <div class="card-body">
-        <h5 class="card-title font-weight-bold">${item.name}</h5>
-        <p class="card-text">RP ${item.price}</p>
     </div>
-</div>`;
+    <div class="card-body">
+    <h4 class="card-title">${item.name}</h4>
+    <p class="card-text">RP ${item.price}</p>
+    </div>
+    </div>`;
     menuWrapperLandscape.innerHTML += menuLandscape;
     menuWrapperPotrait.innerHTML += menuPotrait;
 }
 console.log(wrapperLandscape);
 var allMenuId = "all-menu-landscape"
 var navbar = document.getElementById("navbar");
+
 function screenResize() {
     if (window.innerWidth < 768) {
         navbar.classList.remove("fixed-top");
@@ -99,7 +105,7 @@ function screenResize() {
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     spaceBetween: 30,
-        effect: 'fade',
+    effect: 'fade',
     direction: 'horizontal',
     loop: true,
 
