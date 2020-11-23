@@ -153,11 +153,12 @@ img {
 .card-barang:hover {
   transform: scale(1.1);
 }
+
 .card-horizontal {
   display: flex;
   flex: 1 1 auto;
   border-radius: 10px;
-  width: 90vw;
+  width: 80vw;
   box-shadow:
     0 1.8px 1.2px 1.8px rgba(0, 0, 0, 0.034),
     0 3.7px 2.3px 3.7px rgba(0, 0, 0, 0.048),
@@ -166,9 +167,11 @@ img {
     0 10.8px 7.4px rgba(0, 0, 0, 0.086),
     0 10px 10px rgba(0, 0, 0, 0.12);
 }
+
 .card-horizontal img {
   width: 50vw;
 }
+
 .fab {
   display: inline-block;
 }
