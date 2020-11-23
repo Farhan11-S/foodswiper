@@ -21,24 +21,20 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    
 
+    <!-- add icon link -->
+    <link rel="icon" href="img/main-icon1.png" type="image/x-icon">
     <title>OHIO</title>
 </head>
 
 <body>
-
-    
-
-    <!-- portrait -->
-    <div class="d-sm-block d-md-none">
-
-        <!-- Nabar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-danger" id="navbar">
         <div class="container">
             <div class="logo">
+                <img href="#" src="img/main-icon1.png">
                 <a class="navbar-brand text-white font-weight-bold" href="#">
-                    <img href="#" src="img/main-icon1.png" width="70px"></a>
+                    OHIO
+                </a>
             </div>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +42,7 @@
             </button>
 
 
-            <div class="collapse navbar-collapse" id="navbarText">
+            <div class="collapse navbar-collapse ml-auto" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link text-white" href="#allmenu">Order</a>
@@ -58,148 +54,80 @@
             </div>
         </div>
     </nav>
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" id="wrapper-potrait">
-                <!-- Slides -->
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <div class="content" id="content-potrait">
-                <h1>Bakso</h1>
-                <p>12.000</p>
-            </div>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides -->
         </div>
-        <!-- main content -->
-        <div class="container mt-4" id="allmenu">
-            <div class="d-flex flex-column">
-                <div class="card card-landscape p-2 mt-3" style="width: 25rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
-                </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-                <div class="card card-landscape p-2 mt-3" style="width: 25rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
     </div>
-
-    <!-- landscape -->
-    <div class="d-md-block d-none">
-        <!-- Nabar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger" id="navbar">
-        <div class="container">
-            <div class="logo">
-                <a class="navbar-brand text-white font-weight-bold" href="#">
-                    <img href="#" src="img/main-icon1.png" width="70px">
-                    OHIO</a>
-            </div>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#allmenu">Order</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#footer">Contect</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" id="wrapper-landscape">
-                <!-- Slides -->
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-        </div>
-        <!-- main content -->
-        <div class="container mt-4" id="allmenu">
-            <div class="d-flex flex-wrap">
-                <div class="card card-landscape p-2 mr-3" style="width: 18rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
+    <!-- main content -->
+    <div class="container" id="allmenu">
+        <div class="d-flex flex-wrap">
+            <div class="card p-3 mr-4 mt-5">
+                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
+                    <p class="card-text">12.000</p>
+                    <a href="#" class="btn btn-success">Order</a>
                 </div>
+            </div>
 
-                <div class="card card-landscape p-2 mr-3" style="width: 18rem;">
-                    <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                        <p class="card-text">12.000</p>
-                        <a href="#" class="btn btn-primary float-right">Order</a>
-                    </div>
+            <div class="card p-3 mr-4 mt-5">
+                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
+                    <p class="card-text">12.000</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                </div>
+            </div>
+
+            <div class="card p-3 mr-4 mt-5">
+                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
+                    <p class="card-text">12.000</p>
+                    <a href="#" class="btn btn-success">Order</a>
+                </div>
+            </div>
+
+            <div class="card p-3 mr-4 mt-5">
+                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
+                    <p class="card-text">12.000</p>
+                    <a href="#" class="btn btn-success">Order</a>
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <!-- Footer -->
-    <footer class="page-footer font-small stylish-color-light pt-4 mt-4 bg-danger" id="footer">
+    <footer class="page-footer font-small stylish-color-light pt-4 mt-5 bg-danger" id="footer">
 
-        <!-- Footer Links -->
         <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
             <div class="row">
-
-                <!-- Grid column -->
                 <div class="col-md-4 mx-auto text-white">
-
-                    <!-- Content -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white ">OHIO</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white ">
+                        <img href="#" src="img/main-icon1.png" width="30px">OHIO</h5>
                     <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
                         consectetur
                         adipisicing elit.</p>
 
                 </div>
-                <!-- Grid column -->
-
                 <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
                 <div class="col-md-4 mx-auto">
-
-                    <!-- Links -->
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Contact</h5>
-
                     <ul class="list-unstyled text-white">
                         <li>
-                            <p>+62877234567</p>
+                            <p>+62 877234567</p>
                         </li>
                         <li>
                             <p>Jl. anbiyen andjayani mejobo Kudus</p>
@@ -207,18 +135,14 @@
                     </ul>
 
                 </div>
-                <!-- Grid column -->
 
                 <hr class="clearfix w-100 d-md-none">
             </div>
-            <!-- Grid row -->
 
         </div>
-        <!-- Footer Links -->
 
-        <hr>
+        <hr class="clearfix w-100 d-ms-none">
 
-        <!-- Social buttons -->
         <ul class="list-unstyled list-inline text-center ">
             <li class="list-inline-item">
                 <a href="#">
@@ -231,46 +155,30 @@
                 </a>
             </li>
         </ul>
-        <!-- Social buttons -->
 
-        <!-- Copyright -->
         <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
             <a href="#navbar" class="text-white font-weight-bold">OHIO.com</a>
         </div>
-        <!-- Copyright -->
 
     </footer>
-    <!-- Footer -->
 </body>
 
 <script>
     var items = ["BAKSO KUAH KALDU", "BAKSO KUAH TAICHAN", "CEKER KUAH KALDU", "CAKAR KUAH TAICHAN",
-        "IGA KUAH KALDU", "IGA KUAH TAICHAN", "TAHU KUAH KALDU", "TAHU KUAH TAICHAN",
+        "IGA KUAH KALDU", "TAHU KUAH KALDU", "TAHU KUAH TAICHAN",
         "TETELAN KUAH KALDU", "TETELAN KUAH TAICHAN"];
-    var wrapperPotrait = document.getElementById("wrapper-potrait");
-    var wrapperLandscape = document.getElementById("wrapper-landscape");
+    var wrapper = document.getElementById("swiper-wrapper");
     items.forEach(showImage);
     function showImage(item, index, arr) {
-        var contentPotrait = `<div class="swiper-slide">
-                <img src="img/${item}.jpg" alt="" width="100%">
-            </div>`;
-        var contentLandscape = `<div class="swiper-slide landscape">
-                    <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
+        var content = `<div class="swiper-slide">
                     <img src="img/${item}.jpg" alt="${item}" style="width:100%;">
                     <div class="content">
-                        <h1>${item}</h1>
+                        <p>${item}</p>
                         <p>12.000</p>
                     </div>
                 </div>
                 </div>`;
-        wrapperPotrait.innerHTML += contentPotrait;
-        wrapperLandscape.innerHTML += contentLandscape;
-    }
-    console.log(wrapperLandscape);
-    if (window.innerWidth < 768) {
-        var navbar = document.getElementById("navbar");
-        navbar.classList.remove("fixed-top");
-        console.log(navbar.classList);
+        wrapper.innerHTML += content;
     }
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
@@ -296,4 +204,5 @@
         },
     })  
 </script>
+
 </html>
