@@ -76,11 +76,12 @@ ul li a:hover {
 
 #content-landscape h1 {
   color: rgb(255, 255, 255);
+  font-size: calc((25vw - 3.5rem) / 7);
 }
 
 #content-landscape p {
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: calc((20vw - 3.5rem) / 7);
 }
 
 #content-potrait h1 {

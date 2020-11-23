@@ -50,7 +50,7 @@ function showCarousell(item, index, arr) {
                 <img src="img/${item.name}.jpg" alt="" width="100%">
                 <div class="content" id="content-potrait">
                         <h1>${item.name}</h1>
-                        <p>${item.price}</p>
+                        <p>RP. ${item.price}</p>
                 </div>
             </div>`;
     var contentLandscape = `<div class="swiper-slide landscape">
@@ -58,7 +58,7 @@ function showCarousell(item, index, arr) {
                     <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
                     <div class="content" id="content-landscape">
                         <h1>${item.name}</h1>
-                        <p>${item.price}</p>
+                        <p>RP. ${item.price}</p>
                     </div>
                 </div>
                 </div>`;
@@ -70,14 +70,14 @@ function showImage(item, index, arr) {
                     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">${item.name}</h5>
-                        <p class="card-text">${item.price}</p>
+                        <p class="card-text">RP. ${item.price}</p>
                     </div>
                 </div>`;
     var menuPotrait = `<div class="card card-landscape p-2 mt-3 mx-auto" style="width: 90vw;">
                     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">${item.name}</h5>
-                        <p class="card-text">${item.price}</p>
+                        <p class="card-text">RP. ${item.price}</p>
                     </div>
                 </div>`;
     menuWrapperLandscape.innerHTML += menuLandscape;
