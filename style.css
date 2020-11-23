@@ -30,6 +30,7 @@ body {
 .custom-toggler.navbar-toggler {
   border-color: rgb(255, 255, 255);
 }
+
 .navbar {
   z-index: 1000;
   background-color: #ce272f;
@@ -56,31 +57,36 @@ body {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 .nav-link:hover:after {
   width: 100%;
   left: 0;
 }
-.navbar-brand{
+
+.navbar-brand {
   margin-left: 75px;
 }
+
 .logo img {
   position: absolute;
   margin-top: -5px;
   width: 70px;
 }
+
 .logo:hover {
   transform: scale(1.1);
 }
+
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.5);
-    right:10px;
-    padding: 30px;
-    border-radius:10vh;
-    color: #000 !important;
-    fill: black !important;
-    stroke: black !important;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  border-radius: 10vh;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
 }
 
 .swiper-button-next:hover {
@@ -88,11 +94,13 @@ body {
   background-color: rgba(255, 255, 255, 0.164);
   transform: scale(1.1);
 }
+
 .swiper-button-prev:hover {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.164);
   transform: scale(1.1);
 }
+
 img {
   vertical-align: middle;
 }
@@ -100,11 +108,12 @@ img {
 .content {
   bottom: 0;
   z-index: 10;
-  background-color:#ce272f;
+  background-color: #ce272f;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
+
 #content-landscape h1 {
   color: rgb(255, 255, 255);
   font-size: calc((25vw - 3.5rem) / 7);
@@ -122,12 +131,14 @@ img {
 #content-potrait p {
   font-size: 4vw;
 }
-.section-title{
+
+.section-title {
   border-bottom: 3px solid #ce272f;
   width: 20%;
   margin: auto;
   padding-bottom: 7px;
 }
+
 .card-barang {
   border-radius: 10px;
   box-shadow:
@@ -161,7 +172,8 @@ img {
 .fab {
   display: inline-block;
 }
-footer{
+
+footer {
   background-color: #ce272f;
 }
 
@@ -170,17 +182,20 @@ footer{
     width: 100%;
     background-color: #ce272f;
   }
+
   .logo img {
     position: absolute;
     margin-top: -5px;
     width: 60px;
   }
-  .section-title{
+
+  .section-title {
     border-bottom: 3px solid #ce272f;
     width: 50%;
     margin: auto;
     padding-bottom: 7px;
   }
+
   .nav-link {
     text-align: center;
   }
