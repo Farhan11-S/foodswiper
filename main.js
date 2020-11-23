@@ -11,22 +11,22 @@ var items = [{
     name: "CAKAR KUAH TAICHAN",
     price: "15.000"
 }, {
-    name:  "IGA KUAH KALDU",
+    name: "IGA KUAH KALDU",
     price: "30.000"
 }, {
-    name:  "IGA KUAH TAICHAN",
+    name: "IGA KUAH TAICHAN",
     price: "32.000"
 }, {
-    name:  "TAHU KUAH KALDU",
+    name: "TAHU KUAH KALDU",
     price: "12.000"
 }, {
-    name:  "TAHU KUAH TAICHAN",
+    name: "TAHU KUAH TAICHAN",
     price: "14.000"
 }, {
-    name:  "TETELAN KUAH KALDU",
+    name: "TETELAN KUAH KALDU",
     price: "16.000"
 }, {
-    name:   "TETELAN KUAH TAICHAN",
+    name: "TETELAN KUAH TAICHAN",
     price: "18.000"
 }];
 var carousellItems = [{
@@ -85,7 +85,7 @@ function showImage(item, index, arr) {
 }
 console.log(wrapperLandscape);
 var allMenuId = "all-menu-landscape"
-function screenResize(){
+function screenResize() {
     if (window.innerWidth < 768) {
         var navbar = document.getElementById("navbar");
         navbar.classList.remove("fixed-top");
