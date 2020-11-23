@@ -20,21 +20,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 
-    <!-- add icon link -->
-    <link rel="icon" href="img/main-icon1.png" type="image/x-icon">
+        <link rel="icon" href="img/main-icon1.png" type="image/x-icon">    
     <title>OHIO</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-danger" id="navbar">
+
+    <!-- Nabar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger" id="navbar">
         <div class="container">
             <div class="logo">
                 <img href="#" src="img/main-icon1.png">
                 <a class="navbar-brand text-white font-weight-bold" href="#">
-                    OHIO
-                </a>
+                    OHIO</a>
             </div>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +41,10 @@
             </button>
 
 
-            <div class="collapse navbar-collapse ml-auto" id="navbarText">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav text-center">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#allmenu">Order</a>
+                        <a id="menu-button" class="nav-link text-white">Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#footer">Contect</a>
@@ -54,131 +53,157 @@
             </div>
         </div>
     </nav>
-    <!-- Slider main container -->
-    <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper" id="swiper-wrapper">
-            <!-- Slides -->
+
+    <!-- portrait -->
+    <div class="d-sm-block d-md-none">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="wrapper-potrait">
+                <!-- Slides -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-    </div>
-    <!-- main content -->
-    <div class="container" id="allmenu">
-        <div class="d-flex flex-wrap">
-            <div class="card p-3 mr-4 mt-5">
-                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                    <p class="card-text">12.000</p>
-                    <a href="#" class="btn btn-success">Order</a>
-                </div>
-            </div>
-
-            <div class="card p-3 mr-4 mt-5">
-                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                    <p class="card-text">12.000</p>
-                    <a href="#" class="btn btn-success">Order</a>
-                </div>
-            </div>
-
-            <div class="card p-3 mr-4 mt-5">
-                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                    <p class="card-text">12.000</p>
-                    <a href="#" class="btn btn-success">Order</a>
-                </div>
-            </div>
-
-            <div class="card p-3 mr-4 mt-5">
-                <img class="card-img-top" src="img/BAKSO KUAH KALDU.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title font-weight-bold">BAKSO KUAH KALDU</h5>
-                    <p class="card-text">12.000</p>
-                    <a href="#" class="btn btn-success">Order</a>
-                </div>
-            </div>
+        <!-- <div class="content swiper-slide" id="content-potrait">
+            <h1>Bakso</h1>
+            <p>12.000</p>
+        </div> -->
+        <!-- main content -->
+        <div class="container mt-4" id="all-menu-potrait">
+            <h2 class="section-title text-center">Our Menus</h2>
+            <div class="d-flex flex-column" id="menu-potrait"></div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small stylish-color-light pt-4 mt-5 bg-danger" id="footer">
+    <!-- landscape -->
+    <div class="d-md-block d-none">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="wrapper-landscape">
+                <!-- Slides -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <div class="container text-center text-md-left">
-            <div class="row">
-                <div class="col-md-4 mx-auto text-white">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white ">
-                        <img href="#" src="img/main-icon1.png" width="30px">OHIO</h5>
-                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipisicing elit.</p>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-                </div>
-                <hr class="clearfix w-100 d-md-none">
-                <div class="col-md-4 mx-auto">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Contact</h5>
-                    <ul class="list-unstyled text-white">
-                        <li>
-                            <p>+62 877234567</p>
-                        </li>
-                        <li>
-                            <p>Jl. anbiyen andjayani mejobo Kudus</p>
-                        </li>
-                    </ul>
+        </div>
+        <!-- main content -->
+        <div class="container mt-4" id="all-menu-landscape">
+            <h2 class="section-title text-center">Our Menus</h2>
+            <div class="d-flex flex-wrap" id="menu-landscape"></div>
+        </div>
 
-                </div>
 
-                <hr class="clearfix w-100 d-md-none">
+    </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-light pt-4 mt-5 bg-danger" id="footer">
+
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-md-4 mx-auto text-white">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white ">
+                    <img href="#" src="img/main-icon1.png" width="30px">OHIO</h5>
+                <p>Bakso dengan kuah pedas berlevel dan campuran rempah pilihan yang pasti bakal bikin kalian susah move on</p>
+
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-4 mx-auto">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Contact</h5>
+                <ul class="list-unstyled text-white">
+                    <li>
+                        <p>+62 81329333234</p>
+                    </li>
+                    <li>
+                        <p>Metro point,Jalan Pemuda no.100 (samping BCA pusat) - Semarang</p>
+                    </li>
+                </ul>
+
             </div>
 
+            <hr class="clearfix w-100 d-md-none d-none">
         </div>
 
-        <hr class="clearfix w-100 d-ms-none">
+    </div>
 
-        <ul class="list-unstyled list-inline text-center ">
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="fab fa-facebook-f text-white"> </i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="fab fa-instagram text-white"> </i>
-                </a>
-            </li>
-        </ul>
+    <hr class="clearfix w-100 d-ms-none">
 
-        <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
-            <a href="#navbar" class="text-white font-weight-bold">OHIO.com</a>
-        </div>
+    <ul class="list-unstyled list-inline text-center ">
+        <li class="list-inline-item">
+            <a href="https://www.instagram.com/baksokuahtaichan_ohio/">
+                <i class="fab fa-instagram text-white"> </i>
+            </a>
+        </li>
+    </ul>
 
-    </footer>
+    <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+        <a href="#navbar" class="text-white font-weight-bold">OHIO.com</a>
+    </div>
+
+</footer>
 </body>
 
 <script>
     var items = ["BAKSO KUAH KALDU", "BAKSO KUAH TAICHAN", "CEKER KUAH KALDU", "CAKAR KUAH TAICHAN",
         "IGA KUAH KALDU", "TAHU KUAH KALDU", "TAHU KUAH TAICHAN",
         "TETELAN KUAH KALDU", "TETELAN KUAH TAICHAN"];
-    var wrapper = document.getElementById("swiper-wrapper");
+    var wrapperPotrait = document.getElementById("wrapper-potrait");
+    var wrapperLandscape = document.getElementById("wrapper-landscape");
+    var menuWrapperLandscape = document.getElementById("menu-landscape");
+    var menuWrapperPotrait = document.getElementById("menu-potrait");
     items.forEach(showImage);
     function showImage(item, index, arr) {
-        var content = `<div class="swiper-slide">
-                    <img src="img/${item}.jpg" alt="${item}" style="width:100%;">
-                    <div class="content">
-                        <p>${item}</p>
+        var contentPotrait = `<div class="swiper-slide">
+                <img src="img/${item}.jpg" alt="" width="100%">
+                <div class="content" id="content-potrait">
+                        <h1>${item}</h1>
                         <p>12.000</p>
+                </div>
+            </div>`;
+        var contentLandscape = `<div class="swiper-slide landscape">
+                    <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
+                    <img src="img/${item}.jpg" alt="${item}" style="width:100%;">
+                    <div class="content" id="content-landscape">
+                        <h1 class="font-weight-bold">${item}</h1>
+                        <h3>12.000</h3>
                     </div>
                 </div>
                 </div>`;
-        wrapper.innerHTML += content;
+        var menuLandscape = `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 18rem;">
+                    <img class="card-img-top" src="img/${item}.jpg" alt="${item}">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">${item}</h5>
+                        <p class="card-text">12.000</p>
+                    </div>
+                </div>`;
+        var menuPotrait = `<div class="card-barang p-2 mt-4 mx-auto" style="width: 25rem;">
+                    <img class="card-img-top" src="img/${item}.jpg" alt="${item}">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">${item}</h5>
+                        <p class="card-text">12.000</p>
+                    </div>
+                </div>`;
+        wrapperPotrait.innerHTML += contentPotrait;
+        wrapperLandscape.innerHTML += contentLandscape;
+        menuWrapperLandscape.innerHTML += menuLandscape;
+        menuWrapperPotrait.innerHTML += menuPotrait;
+    }
+    console.log(wrapperLandscape);
+    var allMenuId = "all-menu-landscape"
+    if (window.innerWidth < 768) {
+        var navbar = document.getElementById("navbar");
+        navbar.classList.remove("fixed-top");
+        console.log(navbar.classList);
+        var allMenuId = "all-menu-potrait"
     }
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
@@ -202,7 +227,10 @@
         autoplay: {
             delay: 5000,
         },
-    })  
+    });
+    document.getElementById("menu-button").onclick = function () {
+        window.location.href = `#${allMenuId}`;
+    };
 </script>
 
 </html>
