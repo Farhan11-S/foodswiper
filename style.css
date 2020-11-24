@@ -22,7 +22,7 @@ body {
   background-color: #ce272f;
 }
 
-.nav-link {
+.dropdown {
   font-size: smaller;
   text-transform: uppercase;
   text-decoration: none;
@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 
-.nav-link:after {
+.dropdown:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
   display: block;
@@ -44,7 +44,7 @@ body {
   width: 0;
 }
 
-.nav-link:hover:after {
+.dropdown:hover:after {
   width: 100%;
   left: 0;
 }
@@ -230,10 +230,6 @@ footer {
 }
 
 @media screen and (min-width:768px) {
-  .overlay {
-    width: 100%;
-    background-color: rgba(255, 0, 0, 0.1);
-  }
 
   .content {
     position: absolute;
@@ -241,6 +237,10 @@ footer {
 
   .swiper-container {
     height: 100vh;
+  }
+  .dropdown {
+    margin-left: auto;
+    
   }
 }
 
