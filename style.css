@@ -11,8 +11,6 @@ img {
 .content {
   bottom: 0;
   z-index: 10;
-  background-color: #ce272f;
-  color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
@@ -73,23 +71,17 @@ body {
 }
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.5);
     right:10px;
     padding: 30px;
     border-radius:10vh;
-    color: #000 !important;
-    fill: black !important;
-    stroke: black !important;
+    color: #fff !important;
 }
 
 .swiper-button-next:hover {
-  background-color: white;
   background-color: rgba(255, 255, 255, 0.164);
   transform: scale(1.1);
 }
 .swiper-button-prev:hover {
-  background-color: white;
   background-color: rgba(255, 255, 255, 0.164);
   transform: scale(1.1);
 }
@@ -100,17 +92,54 @@ img {
 .content {
   bottom: 0;
   z-index: 10;
-  background-color:#ce272f;
-  color: #f1f1f1;
   width: 100%;
   padding: 20px;
+}
+
+.content-landscape-name{
+  text-align: center;
+  width: 45vw;
+  height: 25px;
+  background-color: #ff6f00;
+  text-shadow: 2px 2px #000;
+  font-style: italic;
+}
+.content-landscape-name:hover{
+
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: unset;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.content-landscape-price{
+  text-align: center;
+  width: 20vw;
+  height: 25px;
+  background-color: #ff6f00;
+  text-shadow: 2px 2px #000;
+  font-style: italic;
 }
 #content-landscape h1 {
   color: rgb(255, 255, 255);
   font-size: calc((25vw - 3.5rem) / 7);
 }
 
-#content-landscape p {
+#content-landscape h3 {
   color: rgb(255, 255, 255);
   font-size: calc((20vw - 3.5rem) / 7);
 }
@@ -144,9 +173,10 @@ img {
 }
 .card-horizontal {
   display: flex;
+  font-size: 3vh;
   flex: 1 1 auto;
   border-radius: 10px;
-  width: 90vw;
+  width: 80vw;
   box-shadow:
     0 1.8px 1.2px 1.8px rgba(0, 0, 0, 0.034),
     0 3.7px 2.3px 3.7px rgba(0, 0, 0, 0.048),
@@ -156,7 +186,7 @@ img {
     0 10px 10px rgba(0, 0, 0, 0.12);
 }
 .card-horizontal img {
-  width: 50vw;
+  width: 100vw;
 }
 .fab {
   display: inline-block;
@@ -169,6 +199,14 @@ footer{
   .overlay {
     width: 100%;
     background-color: #ce272f;
+  }
+  .content {
+    bottom: 0;
+    background-color: #ff6f00;
+    color: white;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
   }
   .logo img {
     position: absolute;
@@ -194,10 +232,12 @@ footer{
 
   .content {
     position: absolute;
-    background-color: rgba(255, 0, 0, 0.3);
   }
 
   .swiper-container {
     height: 100vh;
   }
 }
+
+
+

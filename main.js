@@ -54,12 +54,17 @@ function showCarousell(item, index, arr) {
             <p>RP ${item.price}</p>
     </div>
 </div>`;
-    var contentLandscape = `<div class="swiper-slide landscape">
+    var contentLandscape = 
+    `<div class="swiper-slide landscape">
     <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
     <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
     <div class="content" id="content-landscape">
+    <div class="content-landscape-name">
         <h1 class="font-weight-bold">${item.name}</h1>
+        </div>
+        <div class="content-landscape-price my-5">
         <h3>RP ${item.price}</h3>
+        </div>
     </div>
 </div>
 </div>`;
@@ -76,15 +81,13 @@ function showImage(item, index, arr) {
     </div>
 </div>`;
     var menuPotrait =
-        `<div class="card-horizontal my-3 mx-auto">
-    <div class="img-square-wrapper">
+        `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 25rem;">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
-    </div>
     <div class="card-body">
-    <h4 class="card-title">${item.name}</h4>
-    <p class="card-text">RP ${item.price}</p>
+        <h6 class="card-title font-weight-bold">${item.name}</h6>
+        <p class="card-text">RP ${item.price}</p>
     </div>
-    </div>`;
+</div>`;
     menuWrapperLandscape.innerHTML += menuLandscape;
     menuWrapperPotrait.innerHTML += menuPotrait;
 }
@@ -104,11 +107,15 @@ function screenResize() {
 }
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    spaceBetween: 30,
-    effect: 'fade',
     direction: 'horizontal',
     loop: true,
-
+    speed: 1000, 
+  slidersPerView: 1,
+  effect: "fade",
+    fadeEffect: { crossFade: true },
+  virtualTranslate: true,
+  
+    
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -132,3 +139,4 @@ document.getElementById("menu-button").onclick = function () {
 };
 window.onload = screenResize;
 window.onresize = screenResize;
+
