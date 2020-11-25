@@ -171,7 +171,8 @@ document.getElementById("menu-button").onclick = function () {
 };
 
 function changeSlides(id) {
-    mySwiper[1  ].slideTo(id);
+    mySwiper[0].slideTo(id);
+    mySwiper[1].slideTo(id);
     closeNav();
 } 
 
