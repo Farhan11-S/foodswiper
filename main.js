@@ -75,8 +75,8 @@ function showCarousell(item, index, arr) {
             <p>RP ${item.price}</p>
     </div>
 </div>`;
-    var contentLandscape = 
-    `<div class="swiper-slide landscape">
+    var contentLandscape =
+        `<div class="swiper-slide landscape">
     <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
     <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
     <div class="content" id="content-landscape">
@@ -102,7 +102,7 @@ function showImage(item, index, arr) {
     </div>
 </div>`;
     var menuPotrait =
-        `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 25rem;">
+        `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 80vw;">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
     <div class="card-body">
         <h6 class="card-title font-weight-bold">${item.name}</h6>
@@ -113,30 +113,32 @@ function showImage(item, index, arr) {
     menuWrapperPotrait.innerHTML += menuPotrait;
 }
 console.log(wrapperLandscape);
-var allMenuId = "all-menu-landscape"
+var allMenuId = "all-menu-landscape";
 var navbar = document.getElementById("navbar");
+var sidebarWidth = "250px";
 
 function screenResize() {
     if (window.innerWidth < 768) {
         navbar.classList.remove("fixed-top");
-        console.log(allMenuId);
-        allMenuId = "all-menu-potrait"
+        allMenuId = "all-menu-potrait";
+        sidebarWidth = "100vw";
     } else {
         navbar.classList.add("fixed-top");
-        allMenuId = "all-menu-landscape"
+        allMenuId = "all-menu-landscape";
+        sidebarWidth = "250px";
     }
 }
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    speed: 1000, 
-  slidersPerView: 1,
-  effect: "fade",
+    speed: 1000,
+    slidersPerView: 1,
+    effect: "fade",
     fadeEffect: { crossFade: true },
-  virtualTranslate: true,
-  
-    
+    virtualTranslate: true,
+
+
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -156,9 +158,19 @@ var mySwiper = new Swiper('.swiper-container', {
         delay: 5000,
     },
 });
-document.getElementById("menu-button").onclick = function () {
-    window.location.href = `#${allMenuId}`;
-};
+// document.getElementById("menu-button").onclick = function () {
+//     window.location.href = `#${allMenuId}`;
+// };
+
 window.onload = screenResize;
 window.onresize = screenResize;
 
+// Sidebar
+function openNav() {
+    console.log(sidebarWidth);
+    document.getElementById("mySidebar").style.width = sidebarWidth;
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+}
