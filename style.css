@@ -3,6 +3,7 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
+
 html,
 body {
   position: relative;
@@ -30,6 +31,7 @@ body {
   display: inline-block;
   position: relative;
 }
+
 .dropdown:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
@@ -54,7 +56,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  right:0;
+  right: 0;
   background-color: #ce272f;
   overflow-x: hidden;
   transition: 0.5s;
@@ -74,6 +76,13 @@ body {
   font-size: 36px;
   color: #fff;
 }
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
 .navbar-brand {
   margin-left: 75px;
 }
@@ -90,10 +99,10 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-    right:10px;
-    padding: 30px;
-    border-radius:10vh;
-    color: #fff !important;
+  right: 10px;
+  padding: 30px;
+  border-radius: 10vh;
+  color: #fff !important;
 }
 
 .swiper-button-next:hover {
@@ -118,7 +127,7 @@ img {
   padding: 20px;
 }
 
-.content-landscape-name{
+.content-landscape-name {
   text-align: center;
   width: 45vw;
   height: 25px;
@@ -127,7 +136,7 @@ img {
   font-style: italic;
 }
 
-.content-landscape-price{
+.content-landscape-price {
   text-align: center;
   width: 20vw;
   height: 25px;
@@ -135,6 +144,7 @@ img {
   text-shadow: 2px 2px #000;
   font-style: italic;
 }
+
 #content-landscape h1 {
   color: rgb(255, 255, 255);
   font-size: calc((25vw - 3.5rem) / 7);
@@ -192,6 +202,7 @@ footer {
     width: 100%;
     padding: 20px;
   }
+
   .logo img {
     position: absolute;
     margin-top: -5px;

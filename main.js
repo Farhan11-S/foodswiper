@@ -64,18 +64,23 @@ var wrapperPotrait = document.getElementById("wrapper-potrait");
 var wrapperLandscape = document.getElementById("wrapper-landscape");
 var menuWrapperLandscape = document.getElementById("menu-landscape");
 var menuWrapperPotrait = document.getElementById("menu-potrait");
+var scrollable = document.getElementById("scrollable");
 items.forEach(showImage);
-carousellItems.forEach(showCarousell);
 
-function showCarousell(item, index, arr) {
-    var contentPotrait = `<div class="swiper-slide">
+var contentPotrait = "";
+var contentLandscape = "";
+var menuLandscape =  "";
+var menuPotrait = "";
+var scrollabItem = "";
+function showImage(item, index, arr) {
+    contentPotrait = `<div class="swiper-slide">
     <img src="img/${item.name}.jpg" alt="${item.name}" width="100%">
     <div class="content" id="content-potrait">
             <h1>${item.name}</h1>
             <p>RP ${item.price}</p>
     </div>
-</div>`;
-    var contentLandscape =
+    </div>`;
+    contentLandscape =
         `<div class="swiper-slide landscape">
     <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
     <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
@@ -87,30 +92,32 @@ function showCarousell(item, index, arr) {
         <h3>RP ${item.price}</h3>
         </div>
     </div>
-</div>
-</div>`;
-    wrapperPotrait.innerHTML += contentPotrait;
-    wrapperLandscape.innerHTML += contentLandscape;
-}
+    </div>
+    </div>`;
 
-function showImage(item, index, arr) {
-    var menuLandscape = `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 18rem;">
+    menuLandscape = `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 18rem;">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
     <div class="card-body">
         <h5 class="card-title font-weight-bold">${item.name}</h5>
         <p class="card-text">RP ${item.price}</p>
     </div>
-</div>`;
-    var menuPotrait =
+    </div>`;
+    menuPotrait =
         `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 80vw;">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
     <div class="card-body">
         <h6 class="card-title font-weight-bold">${item.name}</h6>
         <p class="card-text">RP ${item.price}</p>
     </div>
-</div>`;
+    </div>`;
+
+    scrollabItem = `<a class="dropdown-item scroll-item" href="#" onclick="changeSlides(${index + 1})">${item.name}</a>`;
+
     menuWrapperLandscape.innerHTML += menuLandscape;
     menuWrapperPotrait.innerHTML += menuPotrait;
+    wrapperPotrait.innerHTML += contentPotrait;
+    wrapperLandscape.innerHTML += contentLandscape;
+    scrollable.innerHTML += scrollabItem;
 }
 console.log(wrapperLandscape);
 var allMenuId = "all-menu-landscape";
@@ -163,15 +170,22 @@ var mySwiper = new Swiper('.swiper-container', {
 //     window.location.href = `#${allMenuId}`;
 // };
 
+function changeSlides(id) {
+    mySwiper[0].slideTo(id);
+    closeNav();
+} 
+
 window.onload = screenResize;
 window.onresize = screenResize;
 
 // Sidebar
 function openNav() {
-    console.log(sidebarWidth);
     document.getElementById("mySidebar").style.width = sidebarWidth;
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
+    document.getElementsByTagName("body")[0].style.overflow = "initial";
 }
+
