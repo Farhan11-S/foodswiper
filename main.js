@@ -70,9 +70,9 @@ carousellItems.forEach(showCarousell);
 function showCarousell(item, index, arr) {
     var contentPotrait = `<div class="swiper-slide">
     <img src="img/${item.name}.jpg" alt="${item.name}" width="100%">
-    <div class="content" id="content-potrait">
-            <h1>${item.name}</h1>
-            <p>RP ${item.price}</p>
+    <div class="content wow slideInLeft" id="content-potrait">
+            <h1 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".9s">${item.name}</h1>
+            <p class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".9s">RP ${item.price}</p>
     </div>
 </div>`;
     var contentLandscape =
@@ -80,11 +80,11 @@ function showCarousell(item, index, arr) {
     <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
     <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
     <div class="content" id="content-landscape">
-    <div class="content-landscape-name">
-        <h1 class="font-weight-bold">${item.name}</h1>
+    <div class="content-landscape-name wow slideInLeft">
+        <h1 class="font-weight-bold wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".9s">${item.name}</h1>
         </div>
-        <div class="content-landscape-price my-5">
-        <h3>RP ${item.price}</h3>
+        <div class="content-landscape-price my-5 wow slideInLeft">
+        <h3 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".9s">RP ${item.price}</h3>
         </div>
     </div>
 </div>
@@ -125,7 +125,7 @@ function screenResize() {
     } else {
         navbar.classList.add("fixed-top");
         allMenuId = "all-menu-landscape";
-        sidebarWidth = "250px";
+        sidebarWidth = "20vw";
     }
 }
 var mySwiper = new Swiper('.swiper-container', {
