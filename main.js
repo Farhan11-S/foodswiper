@@ -75,25 +75,25 @@ var scrollabItem = "";
 function showImage(item, index, arr) {
     contentPotrait = `<div class="swiper-slide">
     <img src="img/${item.name}.jpg" alt="${item.name}" width="100%">
-    <div class="content" id="content-potrait">
-            <h1>${item.name}</h1>
-            <p>RP ${item.price}</p>
+    <div class="content wow slideInLeft" id="content-potrait">
+            <h1 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".9s">${item.name}</h1>
+            <p class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".9s">RP ${item.price}</p>
     </div>
     </div>`;
     contentLandscape =
         `<div class="swiper-slide landscape">
-    <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
-    <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
-    <div class="content" id="content-landscape">
-    <div class="content-landscape-name">
-        <h1 class="font-weight-bold">${item.name}</h1>
-        </div>
-        <div class="content-landscape-price my-5">
-        <h3>RP ${item.price}</h3>
-        </div>
-    </div>
-    </div>
-    </div>`;
+            <div data-swiper-parallax="500" data-swiper-parallax-opacity="0">
+                <img src="img/${item.name}.jpg" alt="${item.name}" style="width:100%;">
+                <div class="content" id="content-landscape">
+                    <div class="content-landscape-name wow slideInLeft">
+                        <h1 class="font-weight-bold wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".9s">${item.name}</h1>
+                    </div>
+                    <div class="content-landscape-price my-5 wow slideInLeft">
+                        <h3 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".9s">RP ${item.price}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>`;
 
     menuLandscape = `<div class="card-barang p-2 mx-auto my-2 mt-3" style="width: 18rem;">
     <img class="card-img-top" src="img/${item.name}.jpg" alt="${item.name}">
@@ -132,7 +132,7 @@ function screenResize() {
     } else {
         navbar.classList.add("fixed-top");
         allMenuId = "all-menu-landscape";
-        sidebarWidth = "250px";
+        sidebarWidth = "20vw";
     }
 }
 var mySwiper = new Swiper('.swiper-container', {
@@ -166,12 +166,12 @@ var mySwiper = new Swiper('.swiper-container', {
         delay: 5000,
     },
 });
-// document.getElementById("menu-button").onclick = function () {
-//     window.location.href = `#${allMenuId}`;
-// };
+document.getElementById("menu-button").onclick = function () {
+    window.location.href = `#${allMenuId}`;
+};
 
 function changeSlides(id) {
-    mySwiper[0].slideTo(id);
+    mySwiper[1  ].slideTo(id);
     closeNav();
 } 
 
