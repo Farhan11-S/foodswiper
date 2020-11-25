@@ -125,7 +125,7 @@ function screenResize() {
     } else {
         navbar.classList.add("fixed-top");
         allMenuId = "all-menu-landscape";
-        sidebarWidth = "250px";
+        sidebarWidth = "20vw";
     }
 }
 var mySwiper = new Swiper('.swiper-container', {
