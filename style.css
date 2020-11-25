@@ -281,3 +281,5 @@ footer {
 .dropdown .dropdown-menu .dropdown-item {
   font-size: 12px;
 }
+.dropdown .dropdown-menu .dropdown-item:focus {
+  background-color: #f2f2f2;
